@@ -1,0 +1,91 @@
+ @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .logo img {
+    animation: spin 5s linear infinite;
+    width: 50px;
+    position: relative;
+    border-style: none; 
+    display: block;
+    text-align: center;
+    margin: auto;
+
+  }
+
+  .logo {
+display: table-row;
+  }
+
+  .container  {
+    background-color: #f7f8fc;
+    width: 130px;
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    position: initial;
+    color:#fff;
+    text-align: center;
+  }
+
+  .listIcons li {
+text-align: center;
+  }
+
+  .icons {
+    font-family:'Themify';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+    line-height: 1;
+    color: #3639ae;
+    font-size: 30px;
+    padding: 20px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-bottom: 4rem;
+    margin-right: 5px;
+    display: flex;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+  }
+
+  .chat {
+    flex: auto;
+    height: 14rem;
+  
+  }
+
+  span {
+    display: block;
+    width: 0.5rem;
+    height: 0.5rem;
+    position: absolute;
+    top: 0.15rem;
+    right: 2rem;
+    border-radius: 0.5rem;
+  }
+  .yellowCircle {
+  
+    background: #e6ee0e;
+  }
+  .orangeCircle {
+   background: orange; 
+  }
+
+  a {
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+   
+  
