@@ -1,0 +1,49 @@
+/*.container {
+  padding: 20px;
+  text-align: center;
+}*/
+
+.title {
+  margin: 30px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px; 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 180px; 
+  height: 30px;
+  
+}
+
+.h2{
+  margin: 4px;
+  font-size: 14px;
+}
+
+.small {
+font-size: 14px;
+text-align: end;
+}
+
+.red {
+  background-color: #e9b7b7;
+}
+
+.pink {
+  background-color: #eca0c6;
+}
+
+.green {
+  background-color: #ccffcc;
+}
+
+.blue {
+  background-color: #cce6ff;
+}

@@ -1,11 +1,15 @@
 import React from 'react';
 import './App.css';
-import Titulo from './assets/Component/titulo/Titulo.jsx';
+import Information from "./Component/tracker0/Information.jsx";
+
+
 
 
 function App() {
   return (
-    <Titulo/>
+    <>
+    <Information/>
+    </>
   );
 }
 
