@@ -9,13 +9,14 @@
   
   .logo img {
     animation: spin 5s linear infinite;
-    width: 50px;
+    width: 60px;
     position: relative;
     border-style: none; 
     display: block;
     text-align: center;
     margin: auto;
-
+    height: 60px
+    
   }
 
   .logo {
