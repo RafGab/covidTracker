@@ -3,6 +3,10 @@ import CountryCards from './CountryCards';
 import "./topcountries.css";
 
 const TopCountries = () => {
+    const data = useApi("");
+    if (!data) {
+        return 
+        <p>cargando</p>
     return (
       <nav className="list">
         <div className="container">

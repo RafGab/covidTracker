@@ -3,6 +3,7 @@ import Cards from './Cards';
 import "./cards.css";
 
 const Information = () => {
+    
 return (
     <>
     <div className='container'>
