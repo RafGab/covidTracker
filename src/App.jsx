@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Navbar from './assets/Component/navbar/Navbar.jsx';
+import Navbar from './Component/navBar/Navbar.jsx';
 import {TbWorld} from "react-icons/tb";
 import {TfiComment, TfiFlickrAlt, TfiStatsUp, TfiLayersAlt, TfiLayoutTab, TfiViewGrid, TfiViewList, TfiPieChart} from "react-icons/tfi"
-import {} from "react-icons/tfi
 import Information from "./Component/tracker0/Information.jsx";
+import TopCountries from './Component/tracker0/TopCountries.jsx';
 
 
 
@@ -32,7 +32,9 @@ function App() {
 
     <div>
     <Navbar/>
-     <Information/>
+    <Information/>
+    <TopCountries/>
+
     </div>
 
   )
