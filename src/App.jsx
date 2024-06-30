@@ -13,8 +13,7 @@ import {
   TfiPieChart,
 } from "react-icons/tfi";
 import Information from "./Component/tracker0/Information.jsx";
-import CountryList from "./Component/tracker1/CountryList.jsx";
-import axios from "axios";
+import CountrySelect from "./Component/tracker1/CountrySelect.jsx";
 
 
 class Like extends React.Component {
@@ -40,7 +39,7 @@ function App() {
     <div className="main">
       <NavbarInformation />
       <Information />
-      <CountryList />
+      <CountrySelect/>
     </div>
   );
 }

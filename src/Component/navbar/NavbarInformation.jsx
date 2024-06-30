@@ -4,7 +4,7 @@ import "./navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navigation">
+    
       <div className="container">
           <ul className="listIcons">
             <li className="logo">
@@ -63,8 +63,6 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-    
-    </nav>
   );
 };
 export default Navbar;

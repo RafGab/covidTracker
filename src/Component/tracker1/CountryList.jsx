@@ -1,6 +1,3 @@
-import React from 'react';
-import Filter from './Filter.jsx';
-
 const CountryList = () => {
     const countries = [
       'Argentina',
