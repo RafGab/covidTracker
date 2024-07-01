@@ -11,6 +11,7 @@ import NavbarInformation from "./Component/navbar/NavbarInformation.jsx";
 
 
 
+
 class Like extends React.Component {
   render() {
     return (
@@ -35,8 +36,9 @@ function App() {
     <div className="main">
       <NavbarInformation />
       <Information />
+      <TopCountries/>
       <CountrySelect/>
-    </div>
+</div>
   );
 }
 
