@@ -1,7 +1,7 @@
 import React from 'react';
 import "./topcountries.css";
 
-const Countries = ({ title, cases, updatedCases, className }) => {
+const CountryCards = ({ title, cases, updatedCases, className }) => {
     return (
     
         <div className={className}>
@@ -12,4 +12,4 @@ const Countries = ({ title, cases, updatedCases, className }) => {
     )
     };
 
-export default Countries;
+export default CountryCards;

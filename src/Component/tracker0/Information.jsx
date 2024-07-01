@@ -7,21 +7,21 @@ const Information = () => {
     const data = useApi("https://disease.sh/v3/covid-19/all");
     if (!data) {
         <p>cargando</p>
+    }
 return (
     <>
     <div className='container'>
-    <h2 className="title">COVID 19-Tracker</h2>
+    <h3 className="title">COVID 19-Tracker</h3>
         <div className='cards'>
-        <Cards title={"Total Case"} cases={data.cases} className="card red" updatedCases={data.todayCases}></Cards>
-        <Cards title={"Active Case"} cases={data.active} className="card pink"></Cards>
-        <Cards title={"Recovered Case"} cases={data.recovered} className="card green" updatedCases={data.todayRecovered}></Cards>
-        <Cards title={"Death Case"} cases={data.deaths} className="card blue" updatedCases={data.todayDeaths} ></Cards>
+        <Cards title={"Total Case"} cases={data.cases} className="totalCases" updatedCases={data.todayCases}></Cards>
+        <Cards title={"Active Case"} cases={data.active} className="activeCases"></Cards>
+        <Cards title={"Recovered Case"} cases={data.recovered} className="recoveredCases" updatedCases={data.todayRecovered}></Cards>
+        <Cards title={"Death Case"} cases={data.deaths} className="deathCases" updatedCases={data.todayDeaths} ></Cards>
         </div>
     </div>
 </>
-);
-}
-}
+)
+};
 
 export default Information;
 

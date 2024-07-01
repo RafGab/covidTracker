@@ -90,5 +90,8 @@ text-align: center;
     text-align: center;
     position: relative;
   }
+  ul {
+    list-style-type: none;
+  }
    
   

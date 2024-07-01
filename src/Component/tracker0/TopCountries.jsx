@@ -3,7 +3,7 @@ import "./topcountries.css";
 import useApi from '../../services/useApi';
 
 const TopCountries = () => {
-  <h3>Top 10 Countries</h3>
+  
     const data = useApi("https://disease.sh/v3/covid-19/countries");
     if (!data) {
         <p>cargando</p>}
@@ -30,6 +30,7 @@ const TopCountries = () => {
       </ul>
       </div>
     </div>
+    
   
   );
 };

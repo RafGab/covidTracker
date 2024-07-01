@@ -6,6 +6,7 @@ import Information from "./Component/tracker0/Information.jsx";
 import CountrySelect from "./Component/tracker1/CountrySelect.jsx";
 import TopCountries from './Component/tracker0/TopCountries.jsx';
 import NavbarInformation from "./Component/navbar/NavbarInformation.jsx";
+import CountryCards from './Component/tracker0/CountryCards.jsx';
 
 
 
