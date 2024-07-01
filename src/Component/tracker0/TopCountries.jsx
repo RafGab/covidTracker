@@ -1,39 +1,38 @@
 import React from 'react';
-import CountryCards from './CountryCards';
 import "./topcountries.css";
-
+import useApi from '../../services/useApi';
 const TopCountries = () => {
-    const data = useApi("");
+  <h3>Top 10 Countries</h3>
+    const data = useApi("https://disease.sh/v3/covid-19/countries_");
     if (!data) {
-        return 
-        <p>cargando</p>
-    return (
-      <nav className="list">
-        <div className="container">
-            <ul className="listCountries">
-              <li className="countryName">
-                  <h3>Top 10 Country</h3>
-                  </li>
-              <li>
-                <a href="#" className="a">
-                <span className="usaflag"><img className="usaflag" src="../../assets/images/usaflag.png"/><p>USA</p><p>86503057</p></span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="a">
-                <span className="usaflag"><img className="italyflag" src="../../assets/images/iyalyflag.png"/><p>ITALY</p><p>86503057</p></span>
-                </a>
-              </li>
-              <li>
-                <a href="#" className="a">
-                <span className="unitedkingdonflag"><img className="unitedkingdonflag" src="../../assets/images/unitedkingdonflag.png"/><p>ITALY</p><p>86503057</p></span>
-                </a>
-              </li>
-            </ul>
-          </div>
-      
-      </nav>
-    );
-  };
-  export default TopCountries;
-  
+        <p>cargando</p>}
+        const sortedData = data.sort((a, b) => b.deaths - a.deaths);
+        const top10Countries = sortedData.slice(0, 10);
+  return (
+    
+    <div className="container">
+      <ul className="listCountries">
+        {top10Countries.map((country, index) => (
+          <li key={index}>
+            <a href="#" className="countryLink">
+              <div className="countryDetails">
+                <img
+                  className="countryFlag"
+                  src={country.countryInfo.flag}
+                  alt={`${country.country} Flag`}
+                />
+                <p>{country.country}</p>
+                <p>{country.cases}</p>
+              </div>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default TopCountries;
+
+    
+

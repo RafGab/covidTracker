@@ -3,7 +3,10 @@ import Cards from './Cards';
 import "./cards.css";
 import useApi from '../../services/useApi';
 
-const Information = () => {
+const Information = () => { 
+    const data = useApi("https://disease.sh/v3/covid-19/all");
+    if (!data) {
+        <p>cargando</p>
 return (
     <>
     <div className='container'>
@@ -17,6 +20,7 @@ return (
     </div>
 </>
 );
+}
 }
 
 export default Information;

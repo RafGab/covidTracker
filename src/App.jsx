@@ -4,9 +4,9 @@ import {TbWorld} from "react-icons/tb";
 import {TfiComment, TfiFlickrAlt, TfiStatsUp, TfiLayersAlt, TfiLayoutTab, TfiViewGrid, TfiViewList, TfiPieChart} from "react-icons/tfi"
 import Information from "./Component/tracker0/Information.jsx";
 import TopCountries from './Component/tracker0/TopCountries.jsx';
-import NavbarInformation from "./Component/navbar/NavbarInformation.jsx";
+import NavbarInformation from "./Component/navBar/Navbar.jsx";
 import CountryList from "./Component/tracker1/CountryList.jsx";
-import axios from "axios";
+
 
 
 
@@ -35,6 +35,7 @@ function App() {
       <NavbarInformation />
       <Information />
       <CountryList />
+      <TopCountries/>
     </div>
   );
 }
