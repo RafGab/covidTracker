@@ -2,9 +2,9 @@ import {TbWorld} from "react-icons/tb";
 import {TfiComment, TfiStatsUp, TfiLayersAlt, TfiLayoutTab, TfiViewGrid, TfiViewList, TfiPieChart, TfiFlickrAlt} from "react-icons/tfi"
 import "./navbar.css";
 
-const Navbar = () => {
+const NavbarInformation = () => {
   return (
-    
+    <nav className="navbar">
       <div className="container">
           <ul className="listIcons">
             <li className="logo">
@@ -63,6 +63,7 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        </nav>
   );
 };
-export default Navbar;
+export default NavbarInformation;
